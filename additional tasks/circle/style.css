@@ -1,0 +1,60 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .light {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .light::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%) scale(0);
+  }
+  
+  .light:hover::after {
+    animation: ripple 0.6s linear forwards;
+  }
+  
+  @keyframes ripple {
+    to {
+      transform: translate(-50%, -50%) scale(10);
+      opacity: 0;
+    }
+  }
+  
+  body {
+    background-color: #181818;
+  }
+  
+  .light::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 50px 15px rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .light:hover::before {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 100px 50px rgba(255, 255, 255, 0.5);
+  }
+  

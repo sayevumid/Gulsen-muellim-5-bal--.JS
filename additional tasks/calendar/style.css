@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    width: 480px;
+    height: 400px;
+   margin:auto;
+   box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.4) ;
+   margin-top: 90px;
+   
+  
+}
+
+.container{
+    width: 480px;
+    height: 150px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.class{
+    color: white;
+   
+}
+.class h2{
+    text-align: center;
+    font-size: 50px;
+}
+.class p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.black{
+    background-color: black;
+    width: 480px;
+    height: 400px;
+}
+
+.wdays{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 11px;
+}
+
+.days{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 9px;
+    
+}
+
+.days div{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+    
+}
+
+.days div:hover:not(.empty){
+    border: 1px solid white;
+}
+
+.days .day{
+   background-color: aqua;
+}
